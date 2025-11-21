@@ -1,0 +1,94 @@
+
+.bg-animation {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bg-animation::before,
+.bg-animation::after {
+    content: "";
+    position: absolute;
+    width: 130%;
+    height: 1.5px;
+    background: rgba(255, 255, 255, 0.35); 
+    animation: lineMove 9s linear infinite;
+}
+
+.bg-animation::after {
+    top: 70%;
+    opacity: 0.25;
+    animation-duration: 12s;
+    animation-direction: reverse;
+}
+
+@keyframes lineMove {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    width: 370px;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 60px auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.08);
+    backdrop-filter: blur(2px);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: #222;
+}
+
+select, input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: #0066cc;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #004fa0;
+}
+
+#output {
+    background: #fff;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Mahasiswa</title>
+    <link rel="stylesheet" href="data mahasiswa.css">
+</head>
+<body>
+
+<div class="bg-animation"></div>
+
+<div class="container">
+    <h1>FORM DATA MAHASISWA</h1>
+    <h2>Universitas Mahaputra Muhammad Yamin</h2>
+
+    <form id="formMahasiswa">
+
+        <label>NIM</label>
+        <input type="text" id="nim" required>
+
+        <label>Nama</label>
+        <input type="text" id="nama" required>
+
+        <label>Jenis Kelamin</label>
+        <select id="jk">
+            <option value="Laki - Laki">Laki - Laki</option>
+            <option value="Perempuan">Perempuan</option>
+        </select>
+
+        <label>Agama</label>
+        <select id="agama">
+            <option>Islam</option>
+            <option>Kristen</option>
+            <option>Katolik</option>
+            <option>Hindu</option>
+            <option>Buddha</option>
+            <option>Konghucu</option>
+        </select>
+
+        <label>Status</label>
+        <select id="status">
+            <option>Mahasiswa</option>
+            <option>Karyawan</option>
+        </select>
+
+        <label>Fakultas</label>
+        <select id="fakultas">
+            <option value="" disabled selected>Pilih Fakultas</option>
+            <option value="Ekonomi">Ekonomi</option>
+            <option value="Pendidikan">Pendidikan</option>
+            <option value="Pertanian">Pertanian</option>
+            <option value="Hukum">Hukum</option>
+        </select>
+
+        <label>Jurusan</label>
+        <select id="jurusan">
+            <option disabled selected>Pilih Jurusan</option>
+        </select>
+
+        <label>Komentar</label>
+        <textarea id="komentar"></textarea>
+
+        <button type="button" id="kirim">KIRIM</button>
+    </form>
+
+    <div id="output" class="output-box"></div>
+</div>
+
+<script src="data mahasiswa.js"></script>
+</body>
+</html>

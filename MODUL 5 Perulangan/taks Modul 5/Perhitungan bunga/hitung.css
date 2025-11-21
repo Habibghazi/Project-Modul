@@ -1,0 +1,94 @@
+:root{
+  --bg: #f4f6f8;
+  --card: #ffffff;
+  --accent: #0b6fb2;
+  --muted: #394a56;
+  --border: #e1e6ea;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background:var(--bg);
+  color:var(--muted);
+  padding:28px 12px;
+}
+
+.container{
+  max-width:820px;
+  margin:0 auto;
+}
+
+h1{
+  text-align:center;
+  margin:0 0 18px 0;
+  color:#163243;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:16px;
+  box-shadow:0 6px 16px rgba(20,30,40,0.06);
+  margin-bottom:18px;
+}
+
+h2{margin-top:0;font-size:18px;color:#153047}
+
+label{
+  display:block;
+  font-weight:600;
+  margin-top:10px;
+  margin-bottom:6px;
+  color:#2f3f48;
+}
+
+input[type="number"], input[type="text"]{
+  width:100%;
+  padding:9px 10px;
+  border-radius:8px;
+  border:1px solid var(--border);
+  font-size:14px;
+  background:#fff;
+  color:#123;
+}
+
+.controls{
+  display:flex;
+  gap:10px;
+  margin-top:12px;
+}
+
+button{
+  padding:10px 12px;
+  border-radius:8px;
+  border:none;
+  cursor:pointer;
+  font-weight:700;
+  background:var(--accent);
+  color:#fff;
+  transition:transform .12s, background .12s;
+}
+
+button:hover{transform:translateY(-2px); background:#07598a}
+button:active{transform:none}
+
+.result{
+  margin-top:12px;
+  padding:10px;
+  border-radius:8px;
+  background:#fbfdff;
+  border:1px solid #eef4f8;
+}
+
+.hidden{display:none}
+
+.note{
+  text-align:center;
+  color:#556;
+  font-size:13px;
+  margin-top:6px;
+}

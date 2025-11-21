@@ -1,0 +1,25 @@
+body {
+    background: #e8f1ff;
+    font-family: Arial, sans-serif;
+    padding: 40px;
+}
+
+.judul {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.kotak {
+    width: 450px;
+    margin: auto;
+    background: white;
+    padding: 20px 25px;
+    border-radius: 10px;
+    border: 2px solid #4a7bd0;
+}
+
+.kotak p {
+    font-size: 18px;
+    margin: 10px 0;
+}

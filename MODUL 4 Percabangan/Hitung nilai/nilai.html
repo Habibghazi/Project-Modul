@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Menghitung Indeks Prestasi</title>
+    <link rel="stylesheet" href="nilai.css">
+    <script src="nilai.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Menghitung Indeks Prestasi</h2>
+
+    <form name="fform">
+        <div class="row">
+            <div class="input-group">
+                <label>Quis (10%)</label>
+                <input type="text" name="iquis">
+            </div>
+
+            <div class="input-group">
+                <label>Tugas (20%)</label>
+                <input type="text" name="itugas">
+            </div>
+
+            <div class="input-group">
+                <label>UTS (30%)</label>
+                <input type="text" name="iuts">
+            </div>
+
+            <div class="input-group">
+                <label>UAS (40%)</label>
+                <input type="text" name="iuas">
+            </div>
+        </div>
+
+        <div class="button-area">
+            <button type="button" onclick="hitungip()">Hitung</button>
+            <button type="reset" class="reset">Ulang</button>
+        </div>
+
+        <div class="result">
+            <label>Indeks Prestasi</label>
+            <input type="text" name="oip">
+
+            <label>Keterangan</label>
+            <input type="text" name="oket">
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>

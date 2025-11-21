@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> Faktorial, Deret & Tabungan</title>
+  <link rel="stylesheet" href="hitung.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Latihan: Faktorial & Deret / Saldo Tabungan</h1>
+
+   
+    <section class="card">
+      <h2>1. Faktorial dan Jumlah Deret sampai N</h2>
+      <form id="formFactor" autocomplete="off">
+        <label for="nValue">Masukkan N (bilangan bulat ≥ 0):</label>
+        <input id="nValue" type="number" min="0" value="5" required />
+
+        <div class="controls">
+          <button type="submit">Hitung</button>
+          <button type="button" id="resetFactor">Reset</button>
+        </div>
+      </form>
+
+      <div id="resultFactor" class="result hidden" aria-live="polite">
+        <p><strong>N:</strong> <span id="outN"></span></p>
+        <p><strong>Faktorial (N!):</strong> <span id="outFactorial"></span></p>
+        <p><strong>Jumlah Deret (1 + 2 + ... + N):</strong> <span id="outSum"></span></p>
+        <p><strong>Deret:</strong> <span id="outSeries"></span></p>
+      </div>
+    </section>
+
+ 
+    <section class="card">
+      <h2>2. Hitung Saldo Akhir Tabungan (bunga & jangka waktu)</h2>
+      <form id="formSavings" autocomplete="off">
+        <label for="initial">Saldo Awal (Rp):</label>
+        <input id="initial" type="number" min="0" value="100000" required />
+
+        <label for="interest">Bunga per Periode (%) :</label>
+        <input id="interest" type="number" step="0.01" min="0" value="10" required />
+
+        <label for="periods">Jangka Waktu (periode, bilangan bulat ≥ 1):</label>
+        <input id="periods" type="number" min="1" value="3" required />
+
+        <div class="controls">
+          <button type="submit">Hitung</button>
+          <button type="button" id="resetSavings">Reset</button>
+        </div>
+      </form>
+
+      <div id="resultSavings" class="result hidden" aria-live="polite">
+        <h3>Rincian Saldo per Periode</h3>
+        <ol id="savingsList"></ol>
+        <p><strong>Saldo Akhir:</strong> <span id="finalBalance"></span></p>
+      </div>
+    </section>
+
+    <footer class="note">
+      Gambar soal referensi: <code>/mnt/data/681f4f79-2958-467a-8cf9-753deeee156f.png</code>
+    </footer>
+  </main>
+
+  <script src="hitung.js"></script>
+</body>
+</html>

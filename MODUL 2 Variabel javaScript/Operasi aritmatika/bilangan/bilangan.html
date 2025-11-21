@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Dasar</title>
+    <link rel="stylesheet" href="bilangan.css">
+    <script src="bilangan.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Kalkulator Operasi Dasar</h1>
+
+        <form name="fform" class="form-box">
+            
+            <label for="bilangan1">Bilangan Pertama</label>
+            <input type="text" id="bilangan1" name="bilangan1" required>
+
+            <label for="bilangan2">Bilangan Kedua</label>
+            <input type="text" id="bilangan2" name="bilangan2" required>
+
+            <div class="btn-area">
+                <button type="button" onclick="jumlah()">Jumlahkan</button>
+                <button type="button" onclick="kali()">Kalikan</button>
+            </div>
+            <div class="btn-area">
+                <button type="button" onclick="bagi()">Bagikan</button>
+                <button type="reset" class="reset">Ulang</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
